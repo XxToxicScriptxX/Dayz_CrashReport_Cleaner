@@ -39,6 +39,5 @@ def remove_files(Dayz_Dir):
 Dayz_Dir = clean_output(Dayz_Dir)
 print(f'Cleaning:[{Dayz_Dir}]')
 remove_files(Dayz_Dir)
-print(f'Cleaning:[{Dayz_Dir}]')
-remove_files(Dayz_Dir)
+
 
