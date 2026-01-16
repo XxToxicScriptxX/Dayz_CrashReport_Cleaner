@@ -13,7 +13,6 @@ def clean_output(Dayz_Dir):
     Dayz_Dir = Dayz_Dir.replace('\\n\'','')
     return Dayz_Dir
 
-
 def remove_files(Dayz_Dir):
     for root, dirs, files in os.walk(Dayz_Dir, topdown=True):
         for name in files:
@@ -35,9 +34,6 @@ def remove_files(Dayz_Dir):
                                 print(f'[!!] File not found by script: {file}')                   
 
             
-
 Dayz_Dir = clean_output(Dayz_Dir)
 print(f'Cleaning:[{Dayz_Dir}]')
 remove_files(Dayz_Dir)
-
-
